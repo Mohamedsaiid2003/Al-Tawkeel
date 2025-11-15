@@ -4,32 +4,32 @@ import { FaPhone, FaWhatsapp, FaFacebook, FaMapMarkerAlt } from 'react-icons/fa'
 const services = [
   {
     title: 'صيانة الشاشات',
-    img: '/src/images/TV.jpg',
+    img: '/public/images/TV.jpg',
     desc: 'إصلاح جميع أنواع الشاشات والتلفزيونات'
   },
   {
     title: 'صيانة الميكروويف',
-    img: '/src/images/micro.webp',
+    img: '/public/images/micro.webp',
     desc: 'حل مشاكل التسخين والدوائر الإلكترونية'
   },
   {
     title: 'صيانة الخلاطات',
-    img: '/src/images/mixer.png',
+    img: '/public/images/mixer.png',
     desc: 'إصلاح الموتور والشفرات'
   },
   {
     title: 'صيانة مراوح',
-    img: '/src/images/fan.jpg',
+    img: '/public/images/fan.jpg',
     desc: 'إصلاح الموتور والتحكم الإلكتروني'
   },
   {
     title: 'صيانة المكانس',
-    img: '/src/images/vacuom.png',
+    img: '/public/images/vacuom.png',
     desc: 'إصلاح قوة الشفط والموتور'
   },
   {
     title: 'جميع الأجهزة الصغيرة',
-    img: '/src/images/alectrec.png',
+    img: '/public/images/alectrec.png',
     desc: 'غلايات، مكاوي، فرن الكهربائي ، وغيرها'
   },
 ];
@@ -42,7 +42,7 @@ const HomePage = () => {
         {/* اللوجو الكبير بدون برواز */}
         <div className="flex justify-center mb-8">
           <img
-            src="/src/images/logo.png"
+            src="/public/images/logo.png"
             alt="شعار مركز التوكيل"
             className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain hover:scale-105 transition-transform duration-300"
             loading="lazy"
