@@ -83,11 +83,11 @@ const HomePage = () => {
       {/* Services */}
       <section className="py-12 px-6 max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-slate-100 mb-10">خدماتنا</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-col gap-8">
           {services.map((service, i) => (
             <div
               key={i}
-              className="group relative bg-slate-800/70 rounded-2xl p-6 border border-slate-700 hover:border-purple-500 transition-all duration-300 overflow-visible"
+              className="group relative bg-slate-800/70 rounded-2xl p-6 border border-slate-700 hover:border-purple-500 transition-all duration-300 overflow-visible w-full"
             >
               <div className="absolute -left-16 top-1/2 -translate-y-1/2 w-32 h-32 transition-all duration-500 group-hover:-translate-x-12 group-hover:scale-[2.2] group-hover:z-10">
                 <img
