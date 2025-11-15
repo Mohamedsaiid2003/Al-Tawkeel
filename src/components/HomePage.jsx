@@ -93,7 +93,7 @@ const HomePage = () => {
                 <img
                   src={service.img}
                   alt={service.title}
-                  className="w-full h-full object-cover rounded-full border-4 border-slate-700 shadow-xl"
+                  className="w-full h-full object-cover rounded-full border-4 border-slate-700 shadow-xl aspect-square"
                 />
               </div>
 
