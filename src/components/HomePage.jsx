@@ -53,6 +53,9 @@ const HomePage = () => {
         <p className="text-xl text-slate-300 max-w-3xl mx-auto">
           صيانة احترافية لجميع الأجهزة المنزلية الصغيرة
         </p>
+        <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+          قطع غيار اصليه وبالضمان 
+        </p>
       </header>
 
       {/* Services - ريسبونسف 100% */}
