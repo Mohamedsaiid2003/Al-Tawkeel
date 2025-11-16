@@ -2,44 +2,19 @@ import React from 'react';
 import { FaPhone, FaWhatsapp, FaFacebook, FaMapMarkerAlt } from 'react-icons/fa';
 
 const services = [
-  {
-    title: 'صيانة الشاشات',
-    img: '/images/TV.jpg',
-    desc: 'إصلاح جميع أنواع الشاشات والتلفزيونات'
-  },
-  {
-    title: 'صيانة الميكروويف',
-    img: '/images/micro.webp',
-    desc: 'حل مشاكل التسخين والدوائر الإلكترونية'
-  },
-  {
-    title: 'صيانة الخلاطات',
-    img: '/images/mixer.png',
-    desc: 'إصلاح الموتور والشفرات'
-  },
-  {
-    title: 'صيانة مراوح',
-    img: '/images/fan.jpg',
-    desc: 'إصلاح الموتور والتحكم الإلكتروني'
-  },
-  {
-    title: 'صيانة المكانس',
-    img: '/images/vacuom.png',
-    desc: 'إصلاح قوة الشفط والموتور'
-  },
-  {
-    title: 'جميع الأجهزة الصغيرة',
-    img: '/images/alectrec.png',
-    desc: 'غلايات، مكاوي، فرن الكهربائي ، وغيرها'
-  },
+  { title: 'صيانة الشاشات', img: '/images/TV.jpg', desc: 'إصلاح جميع أنواع الشاشات والتلفزيونات' },
+  { title: 'صيانة الميكروويف', img: '/images/micro.webp', desc: 'حل مشاكل التسخين والدوائر الإلكترونية' },
+  { title: 'صيانة الخلاطات', img: '/images/mixer.png', desc: 'إصلاح الموتور والشفرات' },
+  { title: 'صيانة مراوح', img: '/images/fan.jpg', desc: 'إصلاح الموتور والتحكم الإلكتروني' },
+  { title: 'صيانة المكانس', img: '/images/vacuom.png', desc: 'إصلاح قوة الشفط والموتور' },
+  { title: 'جميع الأجهزة الصغيرة', img: '/images/alectrec.png', desc: 'غلايات، مكاوي، فرن الكهربائي ، وغيرها' },
 ];
 
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-gray-100 font-arabic" dir="rtl">
-      {/* Header + Logo Only */}
+      {/* Header + Logo */}
       <header className="text-center py-12 px-6">
-        {/* اللوجو الكبير بدون برواز */}
         <div className="flex justify-center mb-8">
           <img
             src="/images/logo.png"
@@ -49,11 +24,11 @@ const HomePage = () => {
           />
         </div>
 
-        {/* أزرار التواصل */}
+        {/* أزرار التواصل - زي الكود القديم بالظبط */}
         <div className="flex justify-center gap-4 mb-8 flex-wrap">
           <a
             href="tel:+201557646808"
-            className="flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-700 px-6 py-3 rounded-full text-white font-bold shadow-lg hover:shadow-red-600/50 transform hover:scale-110 transition-all duration-300 animate-pulse"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-700 px-6 py-3 rounded-full text-white font-bold shadow-lg hover:shadow-red-600/50 transform hover:scale-110 transition-all duration-300 animate-pulse"
           >
             <FaPhone className="animate-bounce" /> 01557646808
           </a>
@@ -61,7 +36,7 @@ const HomePage = () => {
             href="https://wa.me/201557646808"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gradient-to-r from-green-600 to-green-700 px-6 py-3 rounded-full text-white font-bold shadow-lg hover:shadow-green-600/50 transform hover:scale-110 transition-all duration-300 animate-pulse"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-green-700 px-6 py-3 rounded-full text-white font-bold shadow-lg hover:shadow-green-600/50 transform hover:scale-110 transition-all duration-300 animate-pulse"
           >
             <FaWhatsapp className="animate-bounce" /> واتساب
           </a>
@@ -69,7 +44,7 @@ const HomePage = () => {
             href="https://www.facebook.com/profile.php?id=61572399954792"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-3 rounded-full text-white font-bold shadow-lg hover:shadow-blue-600/50 transform hover:scale-110 transition-all duration-300 animate-pulse"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-3 rounded-full text-white font-bold shadow-lg hover:shadow-blue-600/50 transform hover:scale-110 transition-all duration-300 animate-pulse"
           >
             <FaFacebook className="animate-bounce" /> Face Book
           </a>
@@ -80,24 +55,29 @@ const HomePage = () => {
         </p>
       </header>
 
-      {/* Services */}
+      {/* Services - ريسبونسف 100% */}
       <section className="py-12 px-6 max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-slate-100 mb-10">خدماتنا</h2>
-        <div className="flex flex-col gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <div
               key={i}
-              className="group relative bg-slate-800/70 rounded-2xl p-6 border border-slate-700 hover:border-purple-500 transition-all duration-300 overflow-visible w-full"
+              className="group relative bg-slate-800/70 rounded-2xl p-6 border border-slate-700 hover:border-purple-500 transition-all duration-300 overflow-visible"
             >
-              <div className="absolute -left-16 top-1/2 -translate-y-1/2 w-32 h-32 transition-all duration-500 group-hover:-translate-x-12 group-hover:scale-[2.2] group-hover:z-10">
-                <img
-                  src={service.img}
-                  alt={service.title}
-                  className="w-full h-full object-cover rounded-full border-4 border-slate-700 shadow-xl aspect-square"
-                />
+              {/* الصورة في نص الكارت - تكبر في مكانها */}
+              <div className="flex justify-center -mt-16 mb-4">
+                <div className="w-32 h-32 transition-all duration-500 group-hover:scale-[2.2] group-hover:z-10 z-10">
+                  <img
+                    src={service.img}
+                    alt={service.title}
+                    className="w-full h-full object-cover rounded-full border-4 border-slate-700 shadow-xl"
+                    loading="lazy"
+                  />
+                </div>
               </div>
 
-              <div className="pr-16">
+              {/* النصوص */}
+              <div className="text-center">
                 <h3 className="text-xl font-bold text-purple-300 mb-2">{service.title}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed">{service.desc}</p>
               </div>
